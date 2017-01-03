@@ -1,21 +1,114 @@
-<!DOCTYPE html>
+
 <html>
 <head>
 	<title></title>
+	<link href="src/css/nouislider.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="src/css/main.css">
 </head>
 <body>
 	<header>
 		
 	</header>
+	<!--seccion fechas-->
 	<section>
-		<!--regi-->
-	</section>
-	<section>
-		<!--kathy-->
-	</section>
-	<footer>
-		
-	</footer>
+		<div class="row">
+			<div class="col s8 m8 l8">
+				<div class="col s3 m3 l3">
+					<h6>Fechas </h6>	
+				</div>		
+				<div class="col s3 m3 l3">
+					<div class="cuadro">
+						<input type="date" class="datepicker">
+					</div>
+				</div>
+				<div class="col s3 m3 l3">
+					<div class="cuadro">
+						<input type="date" class="datepicker">
+					</div>
+				</div>
+				<div class="col s3 m3 l3">
+					<div class="cuadro">
+						<select class="browser-default">
+							<option value="1">1 Huesped</option>
+							<option value="2">2 Huespedes</option>
+							<option value="3">3 Huespedes</option>
+						</select>
+					</div>
+				</div>
+
+			</div>
+
+			<!--Seccion tipo de habitacion-->
+		</div>
+		<div class="row">
+			<div class="col s8 m8 l8">
+
+
+				<div class="col s3 m3 l3">
+					<h6>Tipo de habitacion</h6>	
+				</div>		
+				<div class="col s3 m3 l3">
+					<div class="cuadro2">
+
+						<img src="img/casa.png"><p class="textoFiltro">Casa Entera</p><input type="checkbox" id="test5" /><label for="test5"></label>
+					</div>
+				</div>
+				<div class="col s3 m3 l3">
+					<div class="cuadro2">
+
+						<img src="img/privado.png"><p class="textoFiltro">Casa Entera</p><input type="checkbox" id="test4" /><label for="test4"></label>
+					</div>
+				</div>
+				<div class="col s3 m3 l3">
+					<div class="cuadro2">
+
+						<img src="img/sofa.png"><p class="textoFiltro">Casa Entera</p><input type="checkbox" id="test6" /><label for="test6"></label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s8 m8 l8">
+				<div class="col s3 m3 l3">
+					<h6>Rango de Precios</h6>
+				</div>
+				
+
+				<form action="#">
+					<p class="range-field">
+						<input type="range" id="test5" min="0" max="100" />
+					</p>
+				</form>
+				<script type="text/javascript">
+					var slider = document.getElementById('test5');
+					noUiSlider.create(slider, {
+						start: [20, 80],
+						connect: true,
+						step: 1,
+						range: {
+							'min': 0,
+							'max': 100
+						},
+						format: wNumb({
+							decimals: 0
+						})
+					});
+				</script>
+				
+			</div>
+
+		</div>
+	</div>
+
+
+</section>
+<section>
+	<!--kathy-->
+</section>
+<footer>
+
+</footer>
+<script src="src/js/nouislider.min.js"></script>
 <script src="https://use.fontawesome.com/255935a6c0.js"></script>
 </body>
 </html>

@@ -6354,5 +6354,27 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
+section {
+  margin-top: 2%; }
+
+body .cuadro {
+  height: 7%;
+  width: 100%;
+  border: solid 1px black; }
+body .datepicker {
+  border-bottom: none; }
+body .mapa {
+  background-color: #79C6E1;
+  height: 100%; }
+body .cuadro2 {
+  height: 7%;
+  width: 100%;
+  border: solid 1px black;
+  background-color: #E9EBE8; }
+body .textoFiltro {
+  display: inline-block; }
+
+select {
+  border: 1px solid #444; }
 
 /*# sourceMappingURL=main.css.map */
